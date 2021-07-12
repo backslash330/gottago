@@ -1,0 +1,11 @@
+Help for linux_script.sh
+
+Remember to change to the proper directory 
+    ex (cd /home/backslash330/Documents/VS_Code_Projects/gottago/)
+Then you must use the command /home/backslash330/Documents/VS_Code_Projects/gottago/
+    The "chmod 755" will give us read, write, and execute permission. Everybody else will get only read and execute permission. To make the script private, (i.e., only we can read and execute), use "700" instead.
+crontab is used to schedule a python script on linux
+    use crontab -e 
+    * * * * * /home/backslash330/Documents/linux_script.sh >> /home/backslash330/Documents/linux_log.txt
+    Remember that crontab may not work files in an IDE. move files to somewhere crontab has permission or change permissions
+    you may need to rewrite linux_script.sh with the appropriate address if you move the files
